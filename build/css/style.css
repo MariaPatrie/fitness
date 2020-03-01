@@ -516,16 +516,31 @@ button[disabled] {
           align-items: center;
   background-color: #003D85; }
 
+.main-nav__logo {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase; }
+
 @media (max-width: 1199px) {
   .main-nav {
     width: 91%;
-    padding-top: 39px; } }
+    min-height: 57px;
+    padding-top: 39px; }
+  .main-nav__logo {
+    font-size: 24px;
+    line-height: 24px; } }
 
 @media (max-width: 767px) {
   .main-nav {
     width: 96%;
-    min-width: 307px;
-    padding-top: 0; } }
+    min-width: 290px;
+    padding-top: 0; }
+  .main-nav__logo {
+    font-size: 20px;
+    line-height: 20px; } }
 
 .site-list {
   margin: 0;
@@ -697,6 +712,7 @@ button[disabled] {
 @media (max-width: 767px) {
   .main-screen__wrapper {
     width: 96%;
+    min-width: 290px;
     min-height: 416px; }
   .main-screen__container {
     margin: 0 auto; }
@@ -869,7 +885,7 @@ button[disabled] {
   .gym {
     width: 100%;
     min-width: 320px;
-    padding-top: 29px;
+    padding-top: 35px;
     padding-bottom: 72px; }
   .gym__wrapper {
     width: 96%;
@@ -1123,7 +1139,7 @@ button[disabled] {
     -o-border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
        border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
     border-image-slice: 1; }
-  .subscription-list__item:hover subscription-list__button {
+  .subscription-list__item:hover .subscription-list__button {
     color: #FFFFFF;
     border: none;
     background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%); }

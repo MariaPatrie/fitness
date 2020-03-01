@@ -125,7 +125,7 @@
     border-image-slice: 1;
   }
 
-  &:hover subscription-list__button {
+  &:hover .subscription-list__button {
     color: $color-white;
     border: none;
     background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
