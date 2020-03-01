@@ -1357,6 +1357,7 @@ button[disabled] {
   .promo {
     width: 91%;
     min-width: 290px;
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
