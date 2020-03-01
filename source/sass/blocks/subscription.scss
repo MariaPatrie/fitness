@@ -68,7 +68,8 @@
 
 @media (max-width: $mobile-width) {
   .subscription__wrapper {
-    width: 96%;
+    width: 91%;
+    min-width: 290px;
     margin-bottom: 70px;
     padding-top: 47px;
     padding-bottom: 33px;

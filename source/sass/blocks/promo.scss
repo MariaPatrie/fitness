@@ -1,0 +1,152 @@
+.promo {
+  width: 97%;
+  max-width: 1160px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+  @include font (18px, 27px);
+}
+
+.promo__wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding: 82px 76px;
+  flex-grow: 1;
+  background-color: $color-red;
+}
+
+.promo h2 {
+  margin: 0;
+  font-family: $font-title;
+  @include font (90px, 90px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.promo__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__table {
+  width: 152px;
+}
+
+.promo__column {
+  margin-bottom: 6px;
+}
+
+.promo__column-th {
+  margin: 0;
+  padding-bottom: 1px;
+}
+
+.promo__data {
+  position: relative;
+  padding-top: 4px;
+  @include font (40px, 60px);
+  font-weight: 700;
+  background-size: 100% 1px;
+  background-image: linear-gradient($color-white 100%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo__data--month {
+  padding-right: 42px;
+}
+
+.promo__month {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  @include font (14px, 21px);
+  font-weight: 400;
+}
+
+.promo__text [
+  margin-top: 8px;
+  margin-bottom: 45px;
+}
+
+.promo__img {
+  width: 660px;
+  height: 500px;
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    width: 91%;
+    height: 292px;
+    @include font (12px, 18px);
+  }
+
+  .promo__wrapper {
+    min-width: 292px;
+    padding: 49px 47px;
+  }
+
+  .promo h2 {
+    @include font (52px, 52px);
+  }
+
+  .promo__column {
+    margin-bottom: 0px;
+  }
+
+  .promo__data {
+    padding-top: 1px;
+    @include font (24px, 33px);
+  }
+
+  .promo__data--month {
+    padding-right: 30px;
+  }
+
+  .promo__month {
+    top: 4px;
+    left: 17px;
+    @include font (10px, 13px);
+  }
+
+  .promo__table {
+    width: 91px;
+  }
+
+  .promo__text {
+    margin-top: 1px;
+    margin-bottom: 30px;
+  }
+
+  .promo__img {
+    width: 386px;
+    height: 292px;
+  }
+
+  .promo img {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    width: 91%;
+    min-width: 290px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__wrapper {
+    min-width: 290px;
+    width: 100%;
+    padding: 49px 43px;
+  }
+  
+  .promo__img {
+    min-width: 290px;
+    width: 100%;
+    height: 292px;
+  }
+}
