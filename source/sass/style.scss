@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import "mixins_variables.scss";
+//
+@import "base/normalize.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
+@import "base/buttons.scss";
+//
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/main-screen.scss";
+@import "blocks/offer-list.scss";
+//
+@import "blocks/gym.scss";
+//
+@import "blocks/subscription.scss";
+@import "blocks/subscription-list.scss";

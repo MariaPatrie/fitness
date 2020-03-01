@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $font-text;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+input,
+textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: $font-text;
+  color: $color-white;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: $font-text;
+  color: $color-white;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-family: $font-text;
+  color: $color-white;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: $font-text;
+  color: $color-white;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: inset 0 0 3px $color-white;
+  outline: none;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: inset 0 0 3px $color-text;
+}
