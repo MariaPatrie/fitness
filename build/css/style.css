@@ -1666,6 +1666,7 @@ button[disabled] {
   top: 0;
   left: 0;
   min-width: 103px;
+  height: 53px;
   font-size: 14px;
   line-height: 21px;
   color: #2E35AC;
@@ -1673,25 +1674,21 @@ button[disabled] {
 
 .advantages-list__value--square {
   width: 102px;
-  height: 53px;
   margin-left: 30px;
   background-image: url("../img/value-900.svg"); }
 
 .advantages-list__value--car {
   width: 67px;
-  height: 53px;
   left: 2px;
   background-image: url("../img/value-70.svg"); }
 
 .advantages-list__value--place {
   width: 103px;
-  height: 53px;
   margin-left: 23px;
   background-image: url("../img/value-350.svg"); }
 
 .advantages-list__value--years {
   width: 65px;
-  height: 52px;
   top: 2px;
   left: 2px;
   background-image: url("../img/value-5+.svg"); }
@@ -1750,6 +1747,12 @@ button[disabled] {
   margin-bottom: 32px;
   font-size: 26px;
   line-height: 39px; }
+
+.advantages-list__item--right .advantages-list__item-wrapper {
+  padding-right: 8px; }
+
+.advantages-list__item--left .advantages-list__item-wrapper {
+  padding-left: 32px; }
 
 @media (max-width: 1199px) {
   .advantages-list__item {

@@ -37,6 +37,7 @@
   top: 0;
   left: 0;
   min-width: 103px;
+  height: 53px;
   @include font(14px, 21px);
   color: #2E35AC;
   background-repeat: no-repeat;
@@ -44,27 +45,23 @@
 
 .advantages-list__value--square {
   width: 102px;
-  height: 53px;
   margin-left: 30px;
   background-image: url("../img/value-900.svg");
 }
 
 .advantages-list__value--car {
   width: 67px;
-  height: 53px;
   left: 2px;
   background-image: url("../img/value-70.svg");
 }
 
 .advantages-list__value--place {
   width: 103px;
-  height: 53px;
   margin-left: 23px;
   background-image: url("../img/value-350.svg");
 }
 .advantages-list__value--years {
   width: 65px;
-  height: 52px;
   top: 2px;
   left: 2px;
   background-image: url("../img/value-5+.svg");
@@ -121,11 +118,15 @@
   @include font(26px, 39px);
 }
 
-@media (max-width: $tablet-width) {
-  .advantages-list {
-    
-  }
+.advantages-list__item--right .advantages-list__item-wrapper {
+  padding-right: 8px;
+}
 
+.advantages-list__item--left .advantages-list__item-wrapper {
+  padding-left: 32px;
+}
+
+@media (max-width: $tablet-width) {
   .advantages-list__item {
     width: 48%;
     margin: 0;
