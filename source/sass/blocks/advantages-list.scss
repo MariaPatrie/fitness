@@ -108,6 +108,7 @@
 .advantages-list__item--main .advantages-list__value {
   position: relative;
   align-self: center;
+  height: 80px;
   @include font(74px, 80px);
   font-weight: 700;
   color: $color-white;

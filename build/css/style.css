@@ -1738,6 +1738,7 @@ button[disabled] {
   position: relative;
   -ms-flex-item-align: center;
       align-self: center;
+  height: 80px;
   font-size: 74px;
   line-height: 80px;
   font-weight: 700;
