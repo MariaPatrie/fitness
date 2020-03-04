@@ -1,11 +1,14 @@
 .advantages {
+  background-color: $color-ligth-blue;
+}
+
+.advantages__wrapper {
   width: 97%;
   max-width: 1160px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding-top: 77px;
   padding-bottom: 115px;
-  background-color: $color-ligth-blue;
 }
 
 .advantages h2 {
@@ -19,7 +22,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .advantages {
+  .advantages__wrapper {
     width: 91%;
     padding-top: 64px;
     padding-bottom: 95px;
@@ -32,7 +35,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .advantages {
+  .advantages__wrapper {
     width: 91%;
     min-width: 290px;
     padding-top: 43px;

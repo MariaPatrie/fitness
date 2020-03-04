@@ -22,8 +22,3 @@ $(document).ready(function(){
     ]
   });
 });
-
-$(document).ready(function(){
-  //$('.coaches-list__item:nth-child(4n)').css('width', '260px');
-  $('.coaches-list__item').attr('style', 'width: 260px;');
-});
