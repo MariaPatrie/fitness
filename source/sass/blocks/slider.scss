@@ -32,8 +32,12 @@
   opacity: 0.3;
 }
 
-.slick-slide {
-  width: 260px;
+.responses-list .slick-prev {
+  left: -18px;
+}
+
+.responses-list .slick-next {
+  right: -18px;
 }
 
 @media (max-width: $tablet-width) {
@@ -59,5 +63,13 @@
 
   .slick-next {
     right: -7px;
+  }
+
+  .responses-list .slick-prev {
+    left: 4px;
+  }
+
+  .responses-list .slick-next {
+    right: 4px;
   }
 }

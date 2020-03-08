@@ -56,6 +56,15 @@
   padding-top: 25px;
 }
 
+.button--feedback {
+  width: 100%;
+  min-height: 54px;
+  padding-top: 3px;
+  border: 3px solid #FFFFFF;
+  @include font(14px, 16px);
+  background-color: transparent;
+}
+
 button[disabled] {
   opacity: 0.6;
   cursor: not-allowed;
@@ -80,6 +89,10 @@ button[disabled] {
     padding-top: 13px;
     border: 2px solid $color-white;
   }
+
+  .button--feedback {
+    width: 100%;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -92,6 +105,10 @@ button[disabled] {
   }
 
   .button--promo {
+    width: 100%;
+  }
+
+  .button--feedback {
     width: 100%;
   }
 }

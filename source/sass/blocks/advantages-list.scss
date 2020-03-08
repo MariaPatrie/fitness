@@ -246,8 +246,8 @@
   }
 
   .advantages-list__item--main {
-    width: 110vw;
-    margin-left: -10vw;
+    width: calc(110vw);
+    margin-left: calc(-10vw);
     margin-bottom: 49px;
     padding: 0 55px;
     padding-bottom: 8px;

@@ -50,43 +50,36 @@ a {
   margin: -1px;
 }
 
-input,
-textarea {
+input {
   border-radius: 0;
   -webkit-appearance: none;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   font-family: $font-text;
   color: $color-white;
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder {
   font-family: $font-text;
   color: $color-white;
 }
 
-input:-moz-placeholder,
-textarea:-moz-placeholder {
+input:-moz-placeholder {
   font-family: $font-text;
   color: $color-white;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+input:-ms-input-placeholder {
   font-family: $font-text;
   color: $color-white;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
   box-shadow: inset 0 0 3px $color-white;
   outline: none;
 }
 
-input:hover,
-textarea:hover {
+input:hover {
   box-shadow: inset 0 0 3px $color-text;
 }

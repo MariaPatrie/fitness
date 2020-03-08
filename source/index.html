@@ -7,9 +7,9 @@
   <link rel="preload" href="fonts/ptmono.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptmonobold.woff2" as="font" crossorigin="anonymous">
   <title>Фитнес-центр</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header>
@@ -43,7 +43,7 @@
             </ul>
           </div>
           <p>Омск</p>
-        <a class="main-screen__button button" href="#">Купить абонемент</a>
+        <a class="main-screen__button button scroll-to-subscription" href="#anchor-subscription">Купить абонемент</a>
         </div>
           <!--width="500" height="556"
               media="(max-width: 1199px) width="324" height="390"-->
@@ -90,7 +90,7 @@
       <!--</div>-->
     </section>
 
-    <section class="subscription">
+    <section class="subscription" id="anchor-subscription">
       <div class="subscription__wrapper">
         <h2>Абонементы</h2>
         <!--<ul class="subscription__breadcrumbs">
@@ -380,10 +380,150 @@
         </ul>
       </div>
     </section>
+
+    <section class="sales">
+      <h2>Акции</h2>
+      <div class="sales__wrapper">
+        <div class="sale__main">
+          <div class="sale__text">
+            <p class="sale__title">Год</p>
+            <p class="sale__price">4999</p>
+            <p class="sale__content">Безлимитный абонемент в тренажерный зал</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="sale__img">
+          <!--width="280" height="462"
+              media="(max-width: 1199px) width="399" height="462"
+              media="(max-width: 767px) width="290" height="299"-->
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/sale-tablet@1x.jpg 1x, img/sale-tablet@2x.jpg 2x">
+              <img src="img/sale@1x.jpg" srcset="img/sale@1x.jpg 1x, img/sale@2x.jpg 2x" width="280" height="462" alt="sale">
+            </picture>
+          </div>
+        </div>
+        <ul class="sales__list sales-list">
+          <li class="sales-list__item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи <br>абонемент в подарок</p>
+            <a href="#">Подробнее</a>
+          </li>
+          <li class="sales-list__item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="responses">
+      <h2>Отзывы</h2>
+      <div class="responses__list responses-list">
+        <div class="responses-list__item">
+          <div class="responses-list__img">
+            <!--width="80" height="78"
+                media="(max-width: 1199px) width="80" height="80"
+                media="(max-width: 767px) width="68" height="68s"-->
+            <img src="img/response-1@1x.png" srcset="img/response-1@1x.png 1x, img/response-1@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+          </div>
+          <h3>Анна Орлова</h3>
+          <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+        <div class="responses-list__item">
+          <div class="responses-list__img">
+            <img src="img/response-1@1x.png" srcset="img/response-1@1x.png 1x, img/response-1@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+          </div>
+          <h3>Анна Орлова</h3>
+          <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="block-wrapper">
+      <div class="block-wrapper__columns">
+        <section class="feedback">
+          <h2>Бесплатное занятие</h2>
+          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback-form__wrapper">
+              <p class="feedback-form__item">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input id="user-name" type="text" name="name" placeholder="Имя" required>
+              </p>
+              <p class="feedback-form__item">
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" required>
+              </p>
+            </div>
+            <button class="feedback__button button button--feedback" id="submit-feedback" onclick="onTestPhone()">Отправить</button>
+          </form>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <div class="contacts__wrapper">
+            <ul class="contacts__list contact-list">
+              <li class="contact-list__item">
+                <p class="contact-list__title">Адрес:</p>
+                <p class="contact-list__data">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contact-list__item">
+                <p class="contact-list__title">График работы:</p>
+                <p class="contact-list__data">Пн-Вс: с 8:00 до 22:00 </p>
+              </li>
+            </ul>
+            <ul class="contacts__list contact-list">
+              <li class="contact-list__item">
+                <p class="contact-list__title">Телефон:</p>
+                <a class="contact-list__data" href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contact-list__item">
+                <p class="contact-list__title">Email:</p>
+                <a class="contact-list__data" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">SuperGym</a>
+      <ul class="page-footer__sections section-list">
+        <li class="section-list__item"><a href="#">Услуги</a></li>
+        <li class="section-list__item"><a href="#">Абонементы</a></li>
+        <li class="section-list__item"><a href="#">Акции</a></li>
+        <li class="section-list__item"><a href="#">Тренеры</a></li>
+        <li class="section-list__item"><a href="#">Расписание</a></li>
+      </ul>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+            <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.6554 8.26599C21.4515 9.00996 22.2918 9.70992 23.0058 10.5289C23.3212 10.8929 23.6199 11.2684 23.8483 11.6908C24.172 12.2912 23.8788 12.9519 23.3163 12.9878L19.82 12.9863C18.9182 13.0579 18.1988 12.7104 17.5939 12.1203C17.1098 11.6483 16.6615 11.146 16.1961 10.6581C16.0052 10.4587 15.8055 10.2711 15.5669 10.1228C15.0896 9.82623 14.6753 9.91703 14.4025 10.3935C14.1247 10.8781 14.0617 11.4148 14.0344 11.9549C13.997 12.7429 13.7481 12.9501 12.9211 12.9862C11.1537 13.066 9.47629 12.81 7.91806 11.9566C6.54426 11.2043 5.47894 10.1422 4.5517 8.93977C2.74634 6.59842 1.36379 4.02567 0.121208 1.38084C-0.158487 0.784951 0.0460603 0.465084 0.732957 0.453762C1.87358 0.432554 3.01405 0.434063 4.15601 0.452253C4.61959 0.458744 4.92649 0.713249 5.10549 1.13244C5.7226 2.58483 6.47771 3.96665 7.42553 5.24748C7.67794 5.58848 7.93532 5.92948 8.30184 6.16949C8.7073 6.43524 9.01602 6.34716 9.20677 5.91484C9.32781 5.64071 9.3808 5.34544 9.40808 5.05184C9.49845 4.04175 9.51035 3.03338 9.35186 2.02684C9.25455 1.39865 8.88488 0.991982 8.23 0.873108C7.89582 0.8125 7.94558 0.693475 8.10738 0.510898C8.38842 0.196012 8.65274 0 9.17964 0H13.1311C13.7532 0.117516 13.8913 0.385004 13.9765 0.984133L13.9799 5.18536C13.9731 5.4173 14.1009 6.10556 14.5374 6.25908C14.8867 6.36837 15.117 6.10088 15.3265 5.88887C16.2726 4.92776 16.9479 3.79192 17.5511 2.61578C17.8188 2.09861 18.049 1.56153 18.2721 1.02489C18.4373 0.626678 18.6967 0.430742 19.1653 0.439422L22.9684 0.442667C23.0811 0.442667 23.1952 0.444252 23.3044 0.46214C23.9453 0.566675 24.1209 0.830539 23.923 1.42952C23.6111 2.36927 23.0043 3.15241 22.411 3.93917C21.7768 4.77915 21.0985 5.59036 20.4696 6.43532C19.8917 7.20691 19.9376 7.59584 20.6554 8.26599Z" fill="white"/></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--insta" href="#">
+            <span class="visually-hidden">Мы в Инстаграмме</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5034 0H6.49658C2.91431 0 0 2.91431 0 6.49658V17.5036C0 21.0857 2.91431 24 6.49658 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49658C24 2.91431 21.0857 0 17.5034 0V0ZM12 18.5623C8.38147 18.5623 5.43768 15.6185 5.43768 12C5.43768 8.38147 8.38147 5.43768 12 5.43768C15.6185 5.43768 18.5623 8.38147 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623ZM18.7192 6.98529C17.6499 6.98529 16.7802 6.11554 16.7802 5.0462C16.7802 3.97687 17.6499 3.10693 18.7192 3.10693C19.7886 3.10693 20.6585 3.97687 20.6585 5.0462C20.6585 6.11554 19.7886 6.98529 18.7192 6.98529Z" fill="white"/><path d="M12.0001 6.84448C9.15753 6.84448 6.84473 9.1571 6.84473 11.9998C6.84473 14.8423 9.15753 17.1552 12.0001 17.1552C14.8428 17.1552 17.1554 14.8423 17.1554 11.9998C17.1554 9.1571 14.8428 6.84448 12.0001 6.84448Z" fill="white"/><path d="M18.7186 4.51392C18.4253 4.51392 18.1865 4.75269 18.1865 5.04602C18.1865 5.33936 18.4253 5.57812 18.7186 5.57812C19.0121 5.57812 19.2509 5.33954 19.2509 5.04602C19.2509 4.7525 19.0121 4.51392 18.7186 4.51392Z" fill="white"/></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--fb" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z" fill="white"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
