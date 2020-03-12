@@ -209,7 +209,10 @@
       <!--width="660" height="500"
           media="(max-width: 1199px) width="386" height="292"
           media="(max-width: 767px) width="290" height="292"-->
-        <img src="img/promo@1x.jpg" srcset="img/promo@1x.jpg 1x, img/promo@2x.jpg 2x" width="660" height="500" alt="SuperGym">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.jpg 1x, img/promo-mobile@2x.jpg 2x">
+          <img src="img/promo@1x.jpg" srcset="img/promo@1x.jpg 1x, img/promo@2x.jpg 2x" width="660" height="500" alt="SuperGym">
+        </picture>
       </div>
     </section>
 
@@ -520,10 +523,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
