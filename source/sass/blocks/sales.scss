@@ -22,14 +22,14 @@
   justify-content: space-between;
 }
 
-.sale__main {
+.sales__main {
   width: 48%;
   display: flex;
   color: $color-white;
   background-color: #6a94e6;
 }
 
-.sale__text {
+.sales__text {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -39,20 +39,20 @@
   background-color: $color-red;
 }
 
-.sale__title {
+.sales__title {
   margin: 8px 0;
   @include font (28px, 44px);
   font-weight: 700;
 }
 
-.sale__price {
+.sales__price {
   margin-top: -13px;
   margin-bottom: 1px;
   @include font (70px, 70px);
   font-weight: 700;
 }
 
-.sale__img {
+.sales__img {
   width: 280px;
   height: 462px;
   flex-shrink: 0;
@@ -76,7 +76,7 @@
   background-position: 0 100%;
 }
 
-.sale__main a {
+.sales__main a {
   @include font (14px, 16px);
   color: $color-white;
   background-image: linear-gradient($color-white, transparent 100%);
@@ -98,16 +98,16 @@
     @include font (42px, 42px);
   }
 
-  .sale__img {
+  .sales__img {
     width: 399px;
   }
 
-  .sale__img img {
+  .sales__img img {
     width: 399px;
     height: 462px;
   }
 
-  .sale__main {
+  .sales__main {
     width: 100%;
     margin-bottom: 31px;
   }
@@ -116,7 +116,7 @@
     width: 100%;
   }
 
-  .sale__text {
+  .sales__text {
     padding-left: 48px;
     padding-right: 40px;
   }
@@ -135,17 +135,17 @@
     @include font (32px, 32px);
   }
 
-  .sale__img {
+  .sales__img {
     width: 290px;
     height: 299px;
   }
 
-  .sale__img img {
+  .sales__img img {
     width: 290px;
     height: 299px;
   }
 
-  .sale__main {
+  .sales__main {
     flex-direction: column;
     text-align: center;
   }
@@ -155,12 +155,12 @@
     margin-top: 20px;
   }
 
-  .sale__text {
+  .sales__text {
     min-height: 299px;
     padding-right: 48px;
   }
 
-  .sale__content {
+  .sales__content {
     margin: 12px 0;
   }
 }
