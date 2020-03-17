@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/ptmono.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptmonobold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bebasneue.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" crossorigin="anonymous">
   <title>Фитнес-центр</title>
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
@@ -131,6 +134,23 @@
             </p>
             <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
           </li>
+          <li class="subscription-list__item">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">5000<span class="subscription-list__price-bg">5000</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">1700<span class="subscription-list__price-bg">1700</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+
         </ul>
         <ul class="subscription__list subscription-list subscription-list--half-year">
           <li class="subscription-list__item">
@@ -387,14 +407,14 @@
     <section class="sales">
       <h2>Акции</h2>
       <div class="sales__wrapper">
-        <div class="sale__main">
-          <div class="sale__text">
-            <p class="sale__title">Год</p>
-            <p class="sale__price">4999</p>
-            <p class="sale__content">Безлимитный абонемент в тренажерный зал</p>
+        <div class="sales__main">
+          <div class="sales__text">
+            <p class="sales__title">Год</p>
+            <p class="sales__price">4999</p>
+            <p class="sales__content">Безлимитный абонемент в тренажерный зал</p>
             <a href="#">Подробнее</a>
           </div>
-          <div class="sale__img">
+          <div class="sales__img">
           <!--width="280" height="462"
               media="(max-width: 1199px) width="399" height="462"
               media="(max-width: 767px) width="290" height="299"-->
@@ -457,7 +477,7 @@
                 <input id="user-phone" type="tel" name="phone" placeholder="Телефон" required="">
               </p>
             </div>
-            <button class="feedback__button button button--feedback" id="submit-feedback" onclick="onTestPhone()">Отправить</button>
+            <button class="feedback__button button button--feedback" id="submit-feedback" type="submit" onclick="onTestPhone()">Отправить</button>
           </form>
         </section>
 
