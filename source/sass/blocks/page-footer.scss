@@ -46,6 +46,7 @@
   }
 
   .page-footer__logo {
+    margin: 0;
     position: absolute;
     @include font(20px, 20px);
   }
