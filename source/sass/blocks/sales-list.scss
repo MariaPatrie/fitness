@@ -42,7 +42,6 @@
 
 .sales-list__item a {
   margin-top: auto;
-  text-decoration: underline;
   text-transform: uppercase;
   color: $color-text;
 }
@@ -66,6 +65,7 @@
 @media (max-width: $mobile-width) {
   .sales-list__item {
     width: 100%;
+    display: inline-table;
     margin-bottom: 29px;
     padding: 18px 27px;
     padding-bottom: 27px;

@@ -34,6 +34,7 @@
 }
 
 .main-screen h1 {
+  width: 396px;
   margin: 0;
   margin-top: 14px;
   font-family: $font-title;
@@ -85,6 +86,7 @@
   }
 
   .main-screen h1 {
+    width: 100%;
     margin-top: 5px;
     @include font (86px, 86px);
   }
