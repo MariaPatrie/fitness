@@ -64,6 +64,7 @@
 }
 
 .sales a {
+  display: inline-table;
   width: fit-content;
   margin-top: auto;
   text-transform: uppercase;
@@ -127,6 +128,7 @@
   .sales {
     width: 91%;
     min-width: 290px;
+    width: 290px;
     margin-bottom: 0;
   }
 

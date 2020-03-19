@@ -17,8 +17,8 @@
     content: "";
     position: absolute;
     z-index: 0;
-    right: -241px;
-    bottom: -190px;
+    right: -237px;
+    bottom: -149px;
     width: 425px;
     height: 414px;
     background-image: url("../img/subscription-bg@1x.png");
@@ -148,7 +148,7 @@
     align-items: center;
 
     &::after {
-      right: -81px;
+      right: -199px;
       bottom: -111px;
       width: 384px;
       height: 372px;
@@ -163,6 +163,7 @@
   .subscription-list__item {
     min-width: 442px;
     width: 100%;
+    margin-right: 0;
     margin-bottom: 42px;
   }
 

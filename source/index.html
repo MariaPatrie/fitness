@@ -82,7 +82,10 @@
         <!--width="660" height="401"
             media="(max-width: 1199px) width="678" height="345"
             media="(max-width: 767px) width="320" height="313"-->
-        <img class="gym__img" src="img/gym@1x.jpg" srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x" width="660" height="401" alt="SuperGym">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/gym-mobile@1x.jpg 1x, img/gym-mobile@2x.jpg 2x">
+          <img class="gym__img" src="img/gym@1x.jpg" srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x" width="660" height="401" alt="SuperGym">
+        </picture>
         <!--width="364" height="228"
             media="(max-width: 1199px) width="266" height="167"
             media="(max-width: 767px) width="320" height="167"-->
@@ -405,7 +408,7 @@
         <ul class="sales__list sales-list">
           <li class="sales-list__item">
             <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи <br>абонемент в подарок</p>
+            <p>Приведи друга, получи абонемент в подарок</p>
             <a href="#">Подробнее</a>
           </li>
           <li class="sales-list__item">

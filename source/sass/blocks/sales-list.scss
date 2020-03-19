@@ -21,10 +21,6 @@
   border-image-slice: 1;
 }
 
-.sales-list__item br {
-  display: none;
-}
-
 .sales-list__item:nth-last-child(1) {
   margin-bottom: 0;
 }
@@ -55,10 +51,6 @@
 
   .sales-list__item:nth-last-child(1) {
     margin-bottom: 40px;
-  }
-
-  .sales-list__item br {
-    display: block;
   }
 }
 
